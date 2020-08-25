@@ -52,6 +52,8 @@
     <script type="text/javascript" src="js/modal.js"></script>
     <script type="text/javascript" src="js/base-color.js"></script>
     <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+
+    <script type="text/javascript" src="js/jquery.easeScroll.js"></script>
     <!-- スムーススクロール -->
     <script type="text/javascript">
     $(function(){
@@ -255,62 +257,517 @@
             color: #ff2e5a !important;
         }
     </style>
+
+    <style>
+        .a_otf{
+            font-family: a-otf-futo-min-a101-pr6n, serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .txt_color_1{
+            color: #112442 !important; 
+        }
+
+        .tag_green{
+            background: #75b484;
+        }
+
+        .tag_brown{
+            background: #b4aa75;
+        }
+
+        .wbrd_right{
+            border-right: 2px solid #ffffff;
+        }
+
+        .wbrd_bottom{
+            border-bottom: 2px solid #ffffff;
+        }
+
+        .gbrd_bottom{
+            border-bottom: 2px solid #707070;
+        }
+
+        .tb_pad{
+            padding: 1.302vw 1.959vw;
+        }
+
+        .tb_lpad_sp{
+            padding: 3.115vw 5.19vw;
+        }
+
+        .tb_rpad_sp{
+            padding: 3.115vw 3.894vw;
+        }
+
+        .tb_pad_sp_t{
+            padding-top: 3.115vw;
+        }
+
+        .v_align_top{
+            vertical-align: top;
+        }
+
+        .tb_mg0{
+            margin: 0 !;
+        }
+
+        .title_color1{
+            background: #c8cdd4;
+        }
+
+        .title_color2{
+            background: #e8e8e8;
+        }
+
+        .p_color1{
+            background: #e7e9ec;
+        }
+
+        .p_color2{
+            background: #f5f5f5;
+        }
+
+        .undrag{
+            user-drag: none; 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/sp.css">
   </head>
 
 <body>
 
 	<header class="view_pc">
-
-        <div class="common_wrapper">
-            <div class="nav_logo">
-                <a href="#">
-					<img src="img/logo.png" alt="">
-				</a>
-            </div>            
+        <div class="common_wrapper tspace_1 bspace_1">
+            <div class="view_pc">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="width_20"><a href="#"><img class="fix_zoom" src="img/logo.png"></a></td>
+                            <!-- スペース -->
+                            </td>
+                            <td class="width_5">
+                                <a href="#">コンセプト</a>
+                            </td>
+                            <td class="width_5">
+                                <a href="#">アクセスマップ</a>
+                            </td>
+                            <td class="width_5">
+                                <a href="#">物件概要</a>
+                            </td>
+                            <td class="width_5"><a href
+                                    class="square_btn white bg_red line_h_250 font_100 arial bg_grad"
+                                    style="color: white;">お問い合わせ</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-
     </header>
 
 	<header class="view_sp shadow bg_white fixed_top">
 
-        <div class="wrapper_80 flex flex_center">
-            <div class="width_10 txt_center tspace_05 bspace_05">
+        <div class="wrapper_95 flex flex_center">
+            <div class="width_60 txt_center tspace_1 bspace_1">
 				<a href="#">
 					<img src="img/logo.png" alt="">
 				</a>
             </div>
-            <div class="width_70"></div>
+            <div class="width_30"></div>
             
             <!-- Hamburger Menu -->
-            <div class="width_20 txt_center button_container bg_white block" id="toggle2" style="z-index:152;">
-                <span class="top wrapper_40"></span>
-                <span class="middle wrapper_40"></span>
-                <span class="bottom wrapper_40"></span>
+            <div class="width_10 txt_center button_container bg_white block" id="toggle" style="z-index:152;">
+                <span class="top wrapper_50"></span>
+                <span class="middle wrapper_50"></span>
+                <span class="bottom wrapper_50"></span>
                 <!-- <div class="default">Menu</div>
                 <div class="close">Close</div> -->
             </div>
         </div>
 
         <!-- Overlay Menu Open -->
-        <div class="overlay txt_tpad_5" id="overlay2" style="z-index:150;">
+        <div class="overlay txt_tpad_5" id="overlay" style="z-index:150;">
             <nav class="overlay-menu">
-                <div class="wrapper_60 flex flex_center">
-                    <div class="width_33"><a class="width_100 font_75 white bold" href="#">menu1 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu2 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu3 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu4 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu5 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu6 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                </div>
+                <ul class="wrapper_60 flex flex_center">
+                    <li class="width_33"><a class="width_100 font_75 white bold" href="#">menu1</a></li>
+                    <li class="width_33"><a class="width_100 font_75 bold" href="#">menu2</a></li>
+                    <li class="width_33"><a class="width_100 font_75 bold" href="#">menu3</a></li>
+                    <li class="width_33"><a class="width_100 font_75 bold" href="#">menu4</a></li>
+                </ul>
             </nav>
         </div>
 
     </header>
 
+    <div class="prop_overview">
+        <!-- DESKTOP -->
+        <div class="view_pc common_wrapper">
+
+            <!-- Title Img & Tags -->
+            <div class="title_img view_pc">
+                <div class="width_68">
+                    <img class="fix_zoom undrag" src="img/prop_overview_pc.png" style="margin-bottom: -20px !important">
+                </div>
+
+                <div class="width_100" style="background: #112442; height: 1px;"></div>
+
+                <div class="space_2"></div>
+
+                <h2 class="tb_mg0 font_200 line_h_100 a_otf">物件概要</h2>
+
+                <div class="space_1"></div>
+                <div class="space_05"></div>
+
+                <div class="prop_tags">
+
+                    <!-- Row 1 -->
+                    <div class="wrapper_80 flex flex_center">
+                        <div class="width_25">
+                            <div class="tag_item1 tag_green box_radius_25" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 0.925vw 0;">高遮音床</a>
+                            </div>
+                        </div>
+                        <div class="width_25">
+                            <div class="tag_item1 tag_green box_radius_25" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 0.925vw 0;">子育て支援</a>
+                            </div>
+                        </div>
+                        <div class="width_25">
+                            <div class="tag_item1 tag_green box_radius_25" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 0.925vw 0;">エコロジー</a>
+                            </div>
+                        </div>
+                        <div class="width_25">
+                            <div class="tag_item1 tag_green box_radius_25" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 0.925vw 0;">セキュリティ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space_1"></div>
+
+                    <!-- Row 2 -->
+                    <div class="wrapper_100 flex flex_center">
+                        <div class="width_20">
+                            <div class="tag_item1 tag_brown box_radius_25" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 0.925vw 0;">高遮音床</a>
+                            </div>
+                        </div>
+                        <div class="width_20">
+                            <div class="tag_item1 tag_brown box_radius_25" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 0.925vw 0;">子育て支援</a>
+                            </div>
+                        </div>
+                        <div class="width_20">
+                            <div class="tag_item1 tag_brown box_radius_25" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 0.925vw 0;">エコロジー</a>
+                            </div>
+                        </div>
+                        <div class="width_20">
+                            <div class="tag_item1 tag_brown box_radius_25" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 0.925vw 0;">セキュリティ</a>
+                            </div>
+                        </div>
+                        <div class="width_20">
+                            <div class="tag_item1 tag_brown box_radius_25" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 0.925vw 0;">セキュリティ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space_2"></div>
+                </div>
+
+                <!-- Image -->
+                <div class="prop_img">
+                    <div class="wrapper_65">
+                        <img src="img/coming-soon.png" class="fix_zoom" alt="">
+                    </div>
+
+                    <div class="space_2"></div>
+                    <div class="space_05"></div>
+
+                    <div class="wrapper_65">
+                        <img src="img/coming-soon.png" class="fix_zoom" alt="">
+                    </div>
+                </div>
+
+                <div class="space_5"></div>
+                
+                <!-- Table -->
+                <div class="prop_table">
+                    <table class="width_100 font_75">
+                        <tbody>
+                            <tr>
+                                <th class="width_18"></th>
+                                <th class="width_82"></th>
+                            </tr>
+        
+                            <!-- ROW 1 -->
+                            <tr>
+                                <td class="title_color1 tb_pad gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">建物名称</p></td>
+                                <td class="p_color1 tb_pad wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">Reunir Gracias（レウニールグラシアス）</p></td>
+                            </tr>
+        
+                            <!-- ROW 2 -->
+                            <tr>  
+                                <td class="title_color2 tb_pad gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">所在地</p></td>
+                                <td class="p_color2 tb_pad wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">大阪府豊中市螢池中町３丁目</p></td>
+                            </tr>
+        
+                            <!-- ROW 3 -->
+                            <tr>                            
+                                <td class="title_color1 tb_pad gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">アクセス</p></td>
+                                <td class="p_color1 tb_pad wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">阪急宝塚本線 蛍池駅　徒歩4分、大阪モノレール線 蛍池駅　徒歩4分</p></td>
+                            </tr>
+        
+                            <!-- ROW 4 -->
+                            <tr>                            
+                                <td class="title_color2 tb_pad gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">構造</p></td>
+                                <td class="p_color2 tb_pad wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">重量鉄骨造3階建て</p></td>
+                            </tr>
+        
+                            <!-- ROW 5 -->
+                            <tr>                            
+                                <td class="title_color1 tb_pad gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">総戸数</p></td>
+                                <td class="p_color1 tb_pad wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">12世帯</p></td>
+                            </tr>
+        
+                            <!-- ROW 6 -->
+                            <tr>                          
+                                <td class="title_color2 tb_pad gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">竣工</p></td>
+                                <td class="p_color2 tb_pad wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">2020年10月下旬​</p></td>
+                            </tr>
+        
+                            <!-- ROW 7 -->
+                            <tr>
+                                <td class="title_color1 tb_pad gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">棟設備</p></td>
+                                <td class="p_color1 tb_pad wbrd_bottom txt_left"><p class="tb_mg0 line_h_200 txt_color_1">駐車場（月11000円 駐車場敷金別途要）、駐輪場（屋根付き）、ＣＡＴＶ（都市型）／インターネット無料（Ｗｉ－Ｆｉ対応）、オートロック・自動ドア、高遮音床システム「ＳＨＡＩＤＤ５５」、防犯カメラ</p></td>
+                            </tr>
+        
+                            <!-- ROW 8 -->
+                            <tr>                          
+                                <td class="title_color2 tb_pad gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">部屋設備</p></td>
+                                <td class="p_color2 tb_pad wbrd_bottom txt_left">
+                                    <p class="tb_mg0 line_h_200 txt_color_1">玄関鍵（①キー②ロック）／玄関鍵（オプナス）/玄関鍵（スマートロック）<br/>
+                                        カラーモニタ付ドアホン<br/>
+                                        システムキッチン／対面キッチン／３口ガスコンロ<br/>
+                                        給湯器（追焚機能・遠隔操作機能付）／エコジョーズ／給湯箇所（浴室・台所・洗面所）<br/>
+                                        洗髪洗面化粧台／トイレ（洗浄機能付便座）<br/>
+                                        エアコン１台／断熱複層ガラス／人感センサー付玄関灯<br/>
+                                        スマートセンサー/スマートリモコン<br/>
+                                    </p>
+                                </td>
+                            </tr>
+        
+                            <!-- ROW 9 -->
+                            <tr>
+                                <td class="title_color1 tb_pad wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">その他</p></td>
+                                <td class="p_color1 tb_pad txt_left"><p class="tb_mg0 txt_color_1">ペット対応（小型犬・１匹まで）</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+        </div>      
+
+        <!-- MOBILE -->
+        <div class="view_sp width_100">
+            <!-- Title Img & Tags -->
+            <div class="title_img view_sp">
+                <div class="wrapper_70">
+                    <img class="fix_zoom undrag" src="img/prop_overview_sp.png" style="margin-bottom: -17px !important; z-index: -1;">
+                </div>
+
+                <div class="wrapper_20" style="background: #112442; height: 1px; z-index: 50;"></div>
+
+                <div class="space_2"></div>
+                <div class="space_1"></div>
+
+                <h2 class="tb_mg0 font_150 line_h_100 a_otf">物件概要</h2>
+
+                <div class="space_2"></div>
+
+                <div class="prop_tags">
+
+                    <!-- Row 1 -->
+                    <div class="wrapper_65 flex flex_center">
+                        <div class="width_50">
+                            <div class="tag_item1 tag_green box_radius_9999" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 1.6vw 0;">高遮音床</a>
+                            </div>
+                        </div>
+                        <div class="width_50">
+                            <div class="tag_item1 tag_green box_radius_9999" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 1.6vw 0;">子育て支援</a>
+                            </div>
+                        </div>
+
+                        <div class="space_1"></div>
+
+                        <div class="width_50">
+                            <div class="tag_item1 tag_green box_radius_9999" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 1.6vw 0;">エコロジー</a>
+                            </div>
+                        </div>
+                        <div class="width_50">
+                            <div class="tag_item1 tag_green box_radius_9999" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 1.6vw 0;">セキュリティ</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space_1"></div>
+
+                    <!-- Row 2 -->
+                    <div class="wrapper_85 flex flex_center">
+                        <div class="width_33">
+                            <div class="tag_item1 tag_brown box_radius_9999" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 1.6vw 0;">高遮音床</a>
+                            </div>
+                        </div>
+                        <div class="width_33">
+                            <div class="tag_item1 tag_brown box_radius_9999" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 1.6vw 0;">子育て支援</a>
+                            </div>
+                        </div>
+                        <div class="width_33">
+                            <div class="tag_item1 tag_brown box_radius_9999" style="margin: 0 5px;">
+                                <a href="#" class="block white font_75" style="padding: 1.6vw 0;">エコロジー</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space_1"></div>
+
+                <!-- Row 3 -->
+                <div class="wrapper_70 flex flex_center">
+                    <div class="width_67">
+                        <div class="tag_item1 tag_brown box_radius_9999" style="margin: 0 5px;">
+                            <a href="#" class="block white font_75" style="padding: 1.6vw 0;">セキュリティ</a>
+                        </div>
+                    </div>
+                    <div class="width_33">
+                        <div class="tag_item1 tag_brown box_radius_9999" style="margin: 0 5px;">
+                            <a href="#" class="block white font_75" style="padding: 1.6vw 0;">セキュリティ</a>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="space_2"></div>
+            </div>
+
+            <!-- Image Mobile -->
+            <div class="prop_img">
+                <div class="wrapper_85">
+                    <img src="img/coming-soon.png" class="fix_zoom" alt="">                    
+                </div>
+
+                <div class="space_1"></div>
+                <div class="space_05"></div>
+
+                <div class="wrapper_85">
+                    <img src="img/coming-soon.png" class="fix_zoom" alt="">
+                </div>
+            </div>
+
+            <div class="tspace_4"></div>
+            
+            <!-- Property Table Mobile -->
+            <div class="prop_table">
+                <table class="width_100 font_75">
+                    <tbody>
+                        <tr>
+                            <th class="width_24"></th>
+                            <th class="width_76"></th>
+                        </tr>
+    
+                        <!-- ROW 1 -->
+                        <tr>
+                            <td class="title_color1 tb_lpad_sp gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">建物名称</p></td>
+                            <td class="p_color1 tb_rpad_sp wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">Reunir Gracias（レウニールグラシアス）</p></td>
+                        </tr>
+    
+                        <!-- ROW 2 -->
+                        <tr>  
+                            <td class="title_color2 tb_lpad_sp gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">所在地</p></td>
+                            <td class="p_color2 tb_rpad_sp wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">大阪府豊中市螢池中町３丁目</p></td>
+                        </tr>
+    
+                        <!-- ROW 3 -->
+                        <tr>                            
+                            <td class="title_color1 v_align_top tb_lpad_sp tb_pad_sp_t gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">アクセス</p></td>
+                            <td class="p_color1 tb_rpad_sp wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">阪急宝塚本線 蛍池駅　徒歩4分、大阪モノレール線 蛍池駅　徒歩4分</p></td>
+                        </tr>
+    
+                        <!-- ROW 4 -->
+                        <tr>                            
+                            <td class="title_color2 tb_lpad_sp gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">構造</p></td>
+                            <td class="p_color2 tb_rpad_sp wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">重量鉄骨造3階建て</p></td>
+                        </tr>
+    
+                        <!-- ROW 5 -->
+                        <tr>                            
+                            <td class="title_color1 tb_lpad_sp gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">総戸数</p></td>
+                            <td class="p_color1 tb_rpad_sp wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">12世帯</p></td>
+                        </tr>
+    
+                        <!-- ROW 6 -->
+                        <tr>                          
+                            <td class="title_color2 tb_lpad_sp gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">竣工</p></td>
+                            <td class="p_color2 tb_rpad_sp wbrd_bottom txt_left"><p class="tb_mg0 txt_color_1">2020年10月下旬​</p></td>
+                        </tr>
+    
+                        <!-- ROW 7 -->
+                        <tr>
+                            <td class="title_color1 v_align_top tb_lpad_sp tb_pad_sp_t gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">棟設備</p></td>
+                            <td class="p_color1 tb_rpad_sp wbrd_bottom txt_left"><p class="tb_mg0 line_h_200 txt_color_1">駐車場（月11000円 駐車場敷金別途要）、駐輪場（屋根付き）、ＣＡＴＶ（都市型）／インターネット無料（Ｗｉ－Ｆｉ対応）、オートロック・自動ドア、高遮音床システム「ＳＨＡＩＤＤ５５」、防犯カメラ</p></td>
+                        </tr>
+    
+                        <!-- ROW 8 -->
+                        <tr>                          
+                            <td class="title_color2 v_align_top tb_lpad_sp tb_pad_sp_t gbrd_bottom wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">部屋設備</p></td>
+                            <td class="p_color2 tb_rpad_sp wbrd_bottom txt_left">
+                                <p class="tb_mg0 line_h_200 txt_color_1">玄関鍵（①キー②ロック）／玄関鍵（オプナス）/玄関鍵（スマートロック）<br/>
+                                    カラーモニタ付ドアホン<br/>
+                                    システムキッチン／対面キッチン／３口ガスコンロ<br/>
+                                    給湯器（追焚機能・遠隔操作機能付）／エコジョーズ／給湯箇所（浴室・台所・洗面所）<br/>
+                                    洗髪洗面化粧台／トイレ（洗浄機能付便座）<br/>
+                                    エアコン１台／断熱複層ガラス／人感センサー付玄関灯<br/>
+                                    スマートセンサー/スマートリモコン<br/>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <!-- ROW 9 -->
+                        <tr>
+                            <td class="title_color1 tb_lpad_sp wbrd_right txt_right"><p class="tb_mg0 txt_color_1 bold">その他</p></td>
+                            <td class="p_color1 tb_rpad_sp txt_left"><p class="tb_mg0 txt_color_1">ペット対応（小型犬・１匹まで）</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("html").easeScroll();
+    </script>
+
 	<script>	
-		$('#toggle2').click(function () {
+		$('#toggle').click(function () {
 			$(this).toggleClass('active');
-			$('#overlay2').toggleClass('open');
+			$('#overlay').toggleClass('open');
 		});
 	</script>
 
