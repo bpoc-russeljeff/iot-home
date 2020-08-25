@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="" />
-    <meta property="fb:app_id" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="" />
+  <meta property="fb:app_id" content="">
 	<title>IoT Home</title>
-	
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PJLQ9VQ');</script>
-    <!-- End Google Tag Manager -->
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
-    <!-- CSS読込 -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/pagetop.css">
-    <!-- フォントオーサム -->
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <!-- ファビコン読込 -->
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <meta http-equiv="imagetoolbar" content="no">
-    <!-- 検索有無設定 -->
-    <meta name="robots" content="noindex,nofollow" />
-    <!-- googlefont -->
-    <link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
-    <!-- jquery読込 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/easy-rollover.js"></script>
-    <script src="https://use.typekit.net/zzb5mon.js"></script>
-    <script src="js/modernizr-2.8.3.min.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/modal.js"></script>
-    <script type="text/javascript" src="js/base-color.js"></script>
-    <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJLQ9VQ');</script>
+  <!-- End Google Tag Manager -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+  <!-- CSS読込 -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pagetop.css">
+    <!-- Base CSS -->
+	<link rel="stylesheet" href="css/base.css">
+
+  <!-- フォントオーサム -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- ファビコン読込 -->
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <meta http-equiv="imagetoolbar" content="no">
+  <!-- 検索有無設定 -->
+  <meta name="robots" content="noindex,nofollow" />
+  <!-- googlefont -->
+  <link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+  <!-- jquery読込 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/easy-rollover.js"></script>
+  <script src="https://use.typekit.net/zzb5mon.js"></script>
+  <script src="js/modernizr-2.8.3.min.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript" src="js/base-color.js"></script>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
 	<!-- スムーススクロール -->
 	<script type="text/javascript">
 		$(function(){
