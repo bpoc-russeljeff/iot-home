@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="">
+	<title>IoT Home</title>
+	
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJLQ9VQ');</script>
+    <!-- End Google Tag Manager -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CSS読込 -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pagetop.css">
+    <!-- フォントオーサム -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- ファビコン読込 -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- 検索有無設定 -->
+    <meta name="robots" content="noindex,nofollow" />
+    <!-- googlefont -->
+    <link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+    <!-- jquery読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/easy-rollover.js"></script>
+    <script src="https://use.typekit.net/zzb5mon.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/base-color.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+	<!-- スムーススクロール -->
+	<script type="text/javascript">
+	$(function(){
+		$('a[href^="#"]').on('click', function(){
+			var speed = 1000;
+			var href= $(this).attr('href');
+			var target = $(href == '#' || href == '' ? 'html' : href);
+			var position = target.offset().top;
+			$('body,html').animate({scrollTop:position}, speed, 'swing');
+			return false;
+		});
+	});
+	</script>
+	<style id='base_val' type='text/css'></style>
+
+	<style>
+		table {
+		margin: auto;
+		}
+		/* エラーメッセージ　赤文字設定 */
+		.error_msg {
+		color: #ff2e5a !important;
+		}
+		input:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+		}
+	</style>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJLQ9VQ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header class="fixed_top" style="background-color:rgba(255,255,255,0.75);">
+  <section class="view_pc">
+  <ul class="flex flex_center tspace_05 bspace_05">
+  <li class="f_sub width_2"> </li>
+  <li class="f_sub width_11"><a href="#"><img class="fix_zoom" src="img/logo.png"></a></li>
+  <li class="f_sub width_34"> </li>
+  <li class="f_sub width_20 txt_center line_h_100">
+  <a class="square_btn bg_base1 white width_100 box_radius_10 line_h_100 font_125 bold txt_tpad_05 txt_bpad_05" href="tel:0332092750">
+  <span class="font_60 white bold line_h_100 txt_bpad_05">[平日] 10:00～21:00<br></span>
+  <i class="fa fa-phone-square white"></i>&nbsp;03-3209-2750&nbsp;<i class="far fa-arrow-alt-circle-right white"></i>
+  </a>
+  </li>
+  <li class="f_sub width_20">
+  <a class="square_btn bg_matcha white width_100 box_radius_10 line_h_100 font_125 bold txt_tpad_05 txt_bpad_05" href="./index.php#form">
+  <span class="font_60 white bold line_h_100 txt_bpad_05">メールでのお問い合わせはコチラ<br></span>
+  <i class="far fa-envelope white"></i>&nbsp;お問い合わせ&nbsp;<i class="far fa-arrow-alt-circle-right white"></i>
+  </a>
+  </li>
+  <li class="f_sub width_2"> </li>
+  </ul>
+  </section>
+  <section class="view_tabsp">
+  <table class="wrapper_100">
+  <tbody class="wrapper_100">
+  <tr class="tspace_05 bspace_05 width_100">
+  <td class="width_1"><!-- スペース --></td>
+  <td class="width_22"><a href="#"><img class="fix_zoom" src="img/logo.png"></a></td>
+  <td class="width_12"><!-- スペース --></td>
+  <td class="width_32 txt_center">
+  <a class="square_btn bg_base1 white width_100 box_radius_5 font_75 bold line_h_150" href="tel:0332092750">
+  <span class="font_50 white bold line_h_100 view_tabsp txt_tpad_05">[平日] 10:00～21:00</span>
+  <i class="fa fa-phone-square white"></i> 03-3209-2750
+  </a>
+  </td>
+  <td class="width_32 txt_center">
+  <a class="square_btn bg_matcha white width_100 box_radius_5 font_75 bold line_h_150" href="./index.php#form">
+  <span class="font_50 white bold line_h_100 view_tabsp txt_tpad_05">メールのお問い合わせはコチラ</span>
+  <i class="far fa-envelope white"></i> お問い合わせ
+  </a>
+  </td>
+  <td class="width_1"><!-- スペース --></td>
+  </tr>
+  </tbody>
+  </table>
+  </section>
+  </header>
+
+  <main>
+
+  <div class="space_5"><!-- スペース --></div>
+  <div class="space_1"><!-- スペース --></div>
+
+  <section class="bg_base2 wrapper_100">
+
+  <div class="wrapper_100 bg_base1 txt_center">
+  <h2 class="view_pc white font_300 bold">お問い合わせフォーム</h2>
+  <h2 class="view_tabsp white font_200 bold line_h_200">お問い合わせフォーム</h2>
+  </div>
+
+  <div class="cont_wrapper_75 txt_center">
+  <div class="space_5"><!-- スペース --></div>
+
+          <div class="wrapper_60 clear tspace_1 bspace_05 view_pc" style="min-width:450px;">
+            <div class="col3_sp box_radius_9999 clear bg_white">
+              <div class="wrapper_90 flex flex_center">
+                <div class="f_sub f_left width_19 txt_lpad_05"><img src="img/form_flow-icon1_gray.png" class="fix_zoom" style=""></div>
+                <p class="f_sub f_right width_75 txt_lpad_05 txt_left font_100 bold grey line_h_300">応募内容入力</p>
+              </div>
+            </div>
+            <div class="col3_sp box_radius_9999 clear line_h_200 bg_base1">
+              <div class="wrapper_90 flex flex_center">
+                <div class="f_sub f_left width_23 txt_lpad_05"><img src="img/form_flow-icon2_white.png" class="fix_zoom" style=""></div>
+                <p class="f_sub f_right width_72 txt_left txt_lpad_05 font_100 bold whitebold white line_h_300">応募内容確認</p>
+              </div>
+            </div>
+            <div class="col3_sp box_radius_9999 clear line_h_200 bg_white">
+              <div class="wrapper_90 flex flex_center">
+                <div class="f_sub f_left width_20 txt_lpad_05"><img src="img/form_flow-icon3_gray.png" class="fix_zoom" style=""></div>
+                <p class="f_sub f_right width_74 txt_lpad_05 txt_left font_100 bold grey line_h_300">応募内容完了</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recruit_flow wrapper_100 clear tspace_1 bspace_05 view_tabsp" style="">
+            <div class="col3_sp_flow box_radius_9999 clear bg_white" style="padding:0.35rem 0;">
+              <div class="wrapper_90">
+                <div class="f_left width_20" style="padding-top: 0.5rem;padding-left: 0.2rem;"><img src="img/form_flow-icon1_gray.png" class="fix_zoom" style=""></div>
+                <p class="f_right width_75 grey bold">応募内容<br>入力</p>
+              </div>
+            </div>
+            <div class="col3_sp_flow box_radius_9999 clear bg_base1" style="padding:0.35rem 0;">
+              <div class="wrapper_90">
+                <div class="f_left width_30" style="padding-top: 0.6rem;padding-left: 0.2rem;"><img src="img/form_flow-icon2_white.png" class="fix_zoom" style=""></div>
+                <p class="f_right width_65 white bold">応募内容<br>確認</p>
+              </div>
+            </div>
+            <div class="col3_sp_flow box_radius_9999 clear bg_white" style="padding:0.35rem 0;">
+              <div class="wrapper_90">
+                <div class="f_left width_24" style="padding-top: 0.6rem;padding-left: 0.2rem;"><img src="img/form_flow-icon3_gray.png" class="fix_zoom" style=""></div>
+                <p class="f_right width_65 grey bold">応募内容<br>完了</p>
+              </div>
+            </div>
+          </div>
+
+  <div class="space_3"><!-- スペース --></div>
+  <div class="view_tabsp space_2"><!-- スペース --></div>
+
+    <form method="post" action="#form" enctype="multipart/form-data" novalidate  autocomplete="off">
+          <div class="entyr-form cont_wrapper_75">
+            <table class="width_100 txt_left clear" style="position:relative;">
+              <tbody>
+                <tr>
+                  <td class="required"><span class="white box_radius_5 font_75" style="background-color:#eb2828;">必須</span></td>
+                  <td class="td_item1">
+                    <label for="input-name" class="font_100 bold">&nbsp;お名前&nbsp;</label>
+                  </td>
+                  <td class="">
+                    <p class="font_150"><?php echo $clean['your_name']; ?></p>
+            <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="required"><span class="white box_radius_5 font_75" style="background-color:#eb2828;">必須</span></td>
+                  <td class="td_item1">
+                    <label for="input-tel" class="font_100 bold">&nbsp;電話番号&nbsp;</label>
+                  </td>
+                  <td class="">
+                    <p class="font_150"><?php echo $clean['tel']; ?></p>
+            <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="required"><span class="white box_radius_5 font_75" style="background-color:#eb2828;">必須</span></td>
+                  <td class="td_item1">
+                    <label for="input-email" class="font_100 bold">&nbsp;E-Mail&nbsp;</label>
+                  </td>
+                  <td class="">
+                    <p class="font_150"><?php echo $clean['email']; ?></p>
+            <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="required"></span></td>
+                  <td class="td_item1">
+                    <label for="input-company" class="font_100 bold">&nbsp;会社名（店舗名）&nbsp;</label>
+                  </td>
+                  <td class="">
+                    <p class="font_150"><?php echo $clean['company_name']; ?></p>
+            <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="required"></span></td>
+                  <td class="td_item1">
+                    <label for="input-num" class="font_100 bold">&nbsp;宅建番号&nbsp;</label>
+                  </td>
+                  <td class="">
+                    <p class="font_150"><?php echo $clean['num']; ?></p>
+            <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td class="required"></span></td>
+                  <td class="td_item1">
+                    <label for="input-area" class="font_100 bold">&nbsp;お住まいの地域&nbsp;</label>
+                  </td>
+                  <td class="">
+            <p class="font_150">
+              <?php if( $clean['area'] === "1" ){ echo '北海道'; }
+              elseif( $clean['area'] === "2" ){ echo '青森県'; }
+              elseif( $clean['area'] === "3" ){ echo '岩手県'; }
+              elseif( $clean['area'] === "4" ){ echo '宮城県'; }
+              elseif( $clean['area'] === "5" ){ echo '秋田県'; }
+              elseif( $clean['area'] === "6" ){ echo '山形県'; }
+              elseif( $clean['area'] === "7" ){ echo '福島県'; }
+              elseif( $clean['area'] === "8" ){ echo '茨城県'; }
+              elseif( $clean['area'] === "9" ){ echo '栃木県'; }
+              elseif( $clean['area'] === "10" ){ echo '群馬県'; }
+              elseif( $clean['area'] === "11" ){ echo '埼玉県'; }
+              elseif( $clean['area'] === "12" ){ echo '千葉県'; }
+              elseif( $clean['area'] === "13" ){ echo '東京都'; }
+              elseif( $clean['area'] === "14" ){ echo '神奈川県'; }
+              elseif( $clean['area'] === "15" ){ echo '新潟県'; }
+              elseif( $clean['area'] === "16" ){ echo '富山県'; }
+              elseif( $clean['area'] === "17" ){ echo '石川県'; }
+              elseif( $clean['area'] === "18" ){ echo '福井県'; }
+              elseif( $clean['area'] === "19" ){ echo '山梨県'; }
+              elseif( $clean['area'] === "20" ){ echo '長野県'; }
+              elseif( $clean['area'] === "21" ){ echo '岐阜県'; }
+              elseif( $clean['area'] === "22" ){ echo '静岡県'; }
+              elseif( $clean['area'] === "23" ){ echo '愛知県'; }
+              elseif( $clean['area'] === "24" ){ echo '三重県'; }
+              elseif( $clean['area'] === "25" ){ echo '滋賀県'; }
+              elseif( $clean['area'] === "26" ){ echo '京都府'; }
+              elseif( $clean['area'] === "27" ){ echo '大阪府'; }
+              elseif( $clean['area'] === "28" ){ echo '兵庫県'; }
+              elseif( $clean['area'] === "29" ){ echo '奈良県'; }
+              elseif( $clean['area'] === "30" ){ echo '和歌山県'; }
+              elseif( $clean['area'] === "31" ){ echo '鳥取県'; }
+              elseif( $clean['area'] === "32" ){ echo '島根県'; }
+              elseif( $clean['area'] === "33" ){ echo '岡山県'; }
+              elseif( $clean['area'] === "34" ){ echo '広島県'; }
+              elseif( $clean['area'] === "35" ){ echo '山口県'; }
+              elseif( $clean['area'] === "36" ){ echo '徳島県'; }
+              elseif( $clean['area'] === "37" ){ echo '香川県'; }
+              elseif( $clean['area'] === "38" ){ echo '愛媛県'; }
+              elseif( $clean['area'] === "39" ){ echo '高知県'; }
+              elseif( $clean['area'] === "40" ){ echo '福岡県'; }
+              elseif( $clean['area'] === "41" ){ echo '佐賀県'; }
+              elseif( $clean['area'] === "42" ){ echo '長崎県'; }
+              elseif( $clean['area'] === "43" ){ echo '熊本県'; }
+              elseif( $clean['area'] === "44" ){ echo '大分県'; }
+              elseif( $clean['area'] === "45" ){ echo '宮崎県'; }
+              elseif( $clean['area'] === "46" ){ echo '鹿児島県'; }
+              elseif( $clean['area'] === "47" ){ echo '沖縄県'; } ?>
+            </p>
+            <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="required"></span></td>
+                  <td class="td_item1">
+                    <label for="input-request" class="font_100 bold">&nbsp;お問い合わせ種別&nbsp;</label>
+                  </td>
+                  <td class="">
+            <p class="font_150">
+              <?php if( $clean['request'] === "1" ){ echo '売買物件管理・ポータル連動'; }
+              elseif( $clean['request'] === "2" ){ echo '賃貸物件管理・ポータル連動'; }
+              elseif( $clean['request'] === "3" ){ echo '自社ホームページ作成'; }
+              elseif( $clean['request'] === "4" ){ echo '顧客管理'; }
+              elseif( $clean['request'] === "5" ){ echo 'その他'; }
+              else{ echo ''; } ?>
+            </p>
+            <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td class="required"><span></span></td>
+                  <td class="td_item1">
+                    <label for="input-text" class="font_100 bold">&nbsp;お問い合わせ内容&nbsp;</label>
+                  </td>
+                  <td class="">
+                    <p class="font_150"><?php echo nl2br($clean['contact']); ?></p>
+            <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="required"><span></span></td>
+                  <td class="td_item1">
+                    <label for="input-text" class="font_100 bold">&nbsp;プライバシーポリシー&nbsp;</label>
+                  </td>
+                  <td class="">
+                    <p class="font_150"><?php if( $clean['agreement'] === "1" ){ echo '同意する'; }else{ echo '同意しない'; } ?></p>
+            <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
+            
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+  <div class="space_5"><!-- スペース --></div>
+
+    <div class="view_pc wrapper_80 flex_2 enty-send-btn">
+      <input class="view_pc col2_sp f_left  square_btn white bg_grey box_radius_10 line_h_200 font_200 bold arial" type="submit" name="btn_back" value="戻る">
+      <input class="view_pc col2_sp f_right  square_btn white bg_matcha box_radius_10 line_h_200 font_200 bold arial" type="submit" name="btn_submit" value="送信">
+    </div>
+    <div class="view_tabsp wrapper_100 flex_2 enty-send-btn">
+      <input class="view_tabsp col2_sp f_left square_btn white bg_grey box_radius_10 line_h_300 font_100 bold arial" type="submit" name="btn_back" value="戻る">
+      <input class="view_tabsp col2_sp f_right square_btn white bg_matcha box_radius_10 line_h_300 font_100 bold arial" type="submit" name="btn_submit" value="送信">
+    </div>
+
+    <input type="hidden" name="your_name" value="<?php echo $clean['your_name']; ?>">
+    <input type="hidden" name="company_name" value="<?php echo $clean['company_name']; ?>">
+    <input type="hidden" name="email" value="<?php echo $clean['email']; ?>">
+    <input type="hidden" name="tel" value="<?php echo $clean['tel']; ?>">
+    <input type="hidden" name="area" value="<?php echo $clean['area']; ?>">
+    <input type="hidden" name="num" value="<?php echo $clean['num']; ?>">
+    <input type="hidden" name="request" value="<?php echo $clean['request']; ?>">
+    <input type="hidden" name="contact" value="<?php echo $clean['contact']; ?>">
+    <input type="hidden" name="agreement" value="<?php echo $clean['agreement']; ?>">
+    
+    </form>
+    </div>
+    <div class="space_5"><!-- スペース --></div>
+    <div class="space_3"><!-- スペース --></div>
+  </section>
+
+  </main>
+
+  <footer class="wrapper_100 bg_black txt_center">
+  <a href="#"><p class="view_pc line_h_300 font_100 white bold">Copyright © e-vision Co.,Ltd. All right reserved.</p></a>
+  <a href="#"><p class="view_tabsp line_h_300 font_75 white bold">Copyright © e-vision Co.,Ltd. All right reserved.</p></a>
+  </footer>
+</body>
+
+</html>
