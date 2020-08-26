@@ -272,9 +272,31 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJLQ9VQ"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <header class="fixed_top" style="background-color:rgba(255,255,255,0.75);">
-  
-  </header>
+ <!-- Desktop Navigation -->
+<header class="view_pctab txt_tpad_1 txt_bpad_1">
+        <div class="common_wrapper">
+            <div class="width_100 flex flex_center">
+                <div class="width_37">
+                    <a href="../index.html">
+                        <img class="fix_zoom" src="../img/logo.png">
+                    </a>
+                </div>
+                <div class="width_5"></div>
+            </div>
+        </div>
+    </header>
+
+<!-- Mobile Navigation -->
+<header class="view_sp shadow bg_white fixed_top">
+
+	<div class="wrapper_95 flex flex_center">
+		<div class="width_60 txt_center tspace_1 bspace_1">
+			<a href="../index.html">
+				<img src="../img/logo.png" alt="iot-home-logo">
+			</a>
+		</div>
+		<div class="width_30"></div>
+</header>
 
   <main>
 
