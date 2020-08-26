@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +14,25 @@
     <meta property="og:site_name" content="">
     <meta property="og:description" content="" />
     <meta property="fb:app_id" content="">
-	<title>IoT Home</title>
-	
+    <title>IoT Home</title>
+
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PJLQ9VQ');</script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PJLQ9VQ');
+    </script>
     <!-- End Google Tag Manager -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -28,9 +40,9 @@
     <!-- CSS読込 -->
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/pagetop.css">	
-	<!-- Base CSS -->
-	<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="assets/css/pagetop.css">
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="css/base.css">
 
     <!-- フォントオーサム -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -46,7 +58,13 @@
     <script src="js/easy-rollover.js"></script>
     <script src="https://use.typekit.net/zzb5mon.js"></script>
     <script src="js/modernizr-2.8.3.min.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
@@ -54,21 +72,23 @@
     <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
     <!-- スムーススクロール -->
     <script type="text/javascript">
-    $(function(){
-      $('a[href^="#"]').on('click', function(){
-          var speed = 1000;
-          var href= $(this).attr('href');
-          var target = $(href == '#' || href == '' ? 'html' : href);
-          var position = target.offset().top;
-          $('body,html').animate({scrollTop:position}, speed, 'swing');
-          return false;
-      });
-    });
-	</script>
-	
-	<style id='base_val' type='text/css'></style>
+        $(function () {
+            $('a[href^="#"]').on('click', function () {
+                var speed = 1000;
+                var href = $(this).attr('href');
+                var target = $(href == '#' || href == '' ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
 
-	<style type='text/css'>
+    <style id='base_val' type='text/css'></style>
+
+    <style type='text/css'>
         table {
             margin: auto;
         }
@@ -255,64 +275,323 @@
             color: #ff2e5a !important;
         }
     </style>
-  </head>
+</head>
 
 <body>
 
-	<header class="view_pc">
 
-        <div class="common_wrapper">
-            <div class="nav_logo">
-                <a href="#">
-					<img src="img/logo.png" alt="">
-				</a>
-            </div>            
+    <header>
+        <div class="cont_wrapper_65 tspace_1 bspace_1">
+            <div class="view_pc">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="width_12"><a href="#"><img class="fix_zoom" src="img/logo.png"></a></td>
+                            <!-- スペース -->
+                            </td>
+                            <td class="width_5">
+                                <a href="#">コンセプト</a>
+                            </td>
+                            <td class="width_5">
+                                <a href="#">アクセスマップ</a>
+                            </td>
+                            <td class="width_5">
+                                <a href="#">物件概要</a>
+                            </td>
+                            <td class="width_5"><a href
+                                    class="square_btn white bg_red line_h_250 font_100 arial bg_grad"
+                                    style="color: white;">お問い合わせ</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-
     </header>
 
-	<header class="view_sp shadow bg_white fixed_top">
+    <main>
 
-        <div class="wrapper_80 flex flex_center">
-            <div class="width_10 txt_center tspace_05 bspace_05">
-				<a href="#">
-					<img src="img/logo.png" alt="">
-				</a>
-            </div>
-            <div class="width_70"></div>
-            
-            <!-- Hamburger Menu -->
-            <div class="width_20 txt_center button_container bg_white block" id="toggle2" style="z-index:152;">
-                <span class="top wrapper_40"></span>
-                <span class="middle wrapper_40"></span>
-                <span class="bottom wrapper_40"></span>
-                <!-- <div class="default">Menu</div>
-                <div class="close">Close</div> -->
-            </div>
+
+        <!-- Main Banner -->
+        <div class="view_pc">
+            <section class="wrapper_95">
+
+                <img class="fix_zoom" src="img/main_banner.png">
+
+            </section>
         </div>
 
-        <!-- Overlay Menu Open -->
-        <div class="overlay txt_tpad_5" id="overlay2" style="z-index:150;">
-            <nav class="overlay-menu">
-                <div class="wrapper_60 flex flex_center">
-                    <div class="width_33"><a class="width_100 font_75 white bold" href="#">menu1 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu2 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu3 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu4 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu5 <img class="fix_zoom" src="icons/cart.png"></a></div>
-                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu6 <img class="fix_zoom" src="icons/cart.png"></a></div>
+        <div class="view_tabsp">
+            <section class="wrapper_95">
+
+                <img class="fix_zoom" src="img/banner-concet-tbsp.png">
+
+            </section>
+        </div>
+
+        <!-- Concept -->
+
+        <div class="cont_wrapper_65">
+
+            <div class="view_pc">
+                <div style="margin-top: -15px">
+
+                    <img class="fix_zoom" src="img/concept.png">
+
                 </div>
-            </nav>
+            </div>
+
+
+
+            <!-- Iot -->
+
+            <div class="view_pc">
+
+                <div class="wrapper_100">
+
+                    <h2 class="font_200 tspace_05 bspace_05" style="font-weight: 400; font-family: a-otf-futo-min-a101-pr6n, serif;
+                    letter-spacing: 5px; color: #112442;">
+                        IoT時代に対応した新世代型住宅​</h2>
+
+                    <p class="font_100 tspace_05" style="font-family:YuGothic; color: #112442;">
+                        先進のスマートライフを実現する充実した設備<br>
+                        「快適」で「豊か」な新しいライフスタイルをあなたに───​</p>
+
+
+                    <div class="flex_col flex_center">
+                        <div class="cont_wrapper_80 flex">
+                            <div class="width_33">
+                                <img class="fix_zoom" src="img/iot-1.png">
+                            </div>
+                            <div class="width_33">
+                                <img class="fix_zoom" src="img/iot-2.png">
+                            </div>
+                            <div class="width_33">
+                                <img class="fix_zoom" src="img/iot-3.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cont_wrapper_80">
+
+                        <p class="txt_right tspace_05  bold font_60">※画像はイメージです。</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+             <div class="view_tab">
+
+                 <div class="wrapper_100">
+
+                     <h2 class="font_150 tspace_05 bspace_05" style="font-weight: 400; font-family: a-otf-futo-min-a101-pr6n, serif;
+                    letter-spacing: 5px; color: #112442;">
+                         IoT時代に対応した新世代型住宅​</h2>
+
+                     <p class="font_100 tspace_05" style="font-family:YuGothic; color: #112442;">
+                         先進のスマートライフを実現する充実した設備<br>
+                         「快適」で「豊か」<br>な新しいライフスタイルをあなたに───​</p>
+
+
+                     <div class="flex_col flex_center">
+                         <div class="width_100 flex">
+                             <div>
+                                 <img class="fix_zoom" src="img/iot-sp.png">
+                             </div>
+                         </div>
+                     </div>
+
+                 </div>
+
+             </div>
+
+
+            <div class="view_sp">
+
+                <div class="wrapper_100">
+
+                    <h2 class="font_150 tspace_05 bspace_05" style="font-weight: 400; font-family: a-otf-futo-min-a101-pr6n, serif;
+                    letter-spacing: 5px; color: #112442;">
+                        IoT時代に対応した新世代型住宅​</h2>
+
+                    <p class="font_100 tspace_05" style="font-family:YuGothic; color: #112442;">
+                        先進のスマートライフを実現する充実した設備<br>
+                        「快適」で「豊か」<br>な新しいライフスタイルをあなたに───​</p>
+
+
+                    <div class="flex_col flex_center">
+                        <div class="width_100 flex">
+                            <div>
+                                <img class="fix_zoom" src="img/iot-sp.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Point -->
+
+            <div class="cont_wrapper_100">
+
+                <div class="view_pc">
+
+                    <section class="bspace_2 tspace_2 common_wrapper">
+
+                        <img class="fix_zoom" src="img/point.png">
+
+                    </section>
+
+                </div>
+
+                <div class="view_tab">
+
+                    <section class="wrapper_40 bspace_2 tspace_2">
+
+                        <div class="tspace_3"></div>
+
+                        <img class="fix_zoom" src="img/point-sp.png">
+
+                        <div class="bspace_4"></div>
+
+                    </section>
+
+                </div>
+
+                <div class="view_sp">
+
+                    <section class="wrapper_40 bspace_2 tspace_2">
+
+                        <div class="tspace_3"></div>
+
+                        <img class="fix_zoom" src="img/point-sp.png">
+
+                        <div class="bspace_4"></div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- PC -->
+
+                <div class="view_pc">
+
+                    <section>
+
+                        <div>
+                            <img class="fix_zoom" src="img/1.png">
+                        </div>
+
+                    </section>
+
+                    <section>
+
+                        <div>
+                            <img class="fix_zoom" src="img/2.png">
+                        </div>
+
+                    </section>
+
+                    <section>
+
+                        <div>
+                            <img class="fix_zoom" src="img/3.png">
+                        </div>
+
+                    </section>
+
+
+                </div>
+
+
+                 <!-- Tab -->
+
+                 <div class="view_tab">
+
+                     <section>
+
+                         <div>
+                             <img class="fix_zoom" src="img/1-sp.png">
+                         </div>
+
+                     </section>
+
+                     <section>
+
+                         <div>
+                             <img class="fix_zoom" src="img/2-sp.png">
+                         </div>
+
+                     </section>
+
+                     <section>
+
+                         <div>
+                             <img class="fix_zoom" src="img/3-sp.png">
+                         </div>
+
+                     </section>
+
+
+                 </div>
+
+
+                  <!-- sp -->
+
+                  <div class="view_sp">
+
+                      <section>
+
+                          <div>
+                              <img class="fix_zoom" src="img/1-sp.png">
+                          </div>
+
+                      </section>
+
+                      <section>
+
+                          <div>
+                              <img class="fix_zoom" src="img/2-sp.png">
+                          </div>
+
+                      </section>
+
+                      <section>
+
+                          <div>
+                              <img class="fix_zoom" src="img/3-sp.png">
+                          </div>
+
+                      </section>
+
+
+                  </div>
+
+
+
+
+
+
+            </div>
+
+
         </div>
 
-    </header>
+    </main>
 
-	<script>	
-		$('#toggle2').click(function () {
-			$(this).toggleClass('active');
-			$('#overlay2').toggleClass('open');
-		});
-	</script>
+
+
+    <script>
+        $('#toggle2').click(function () {
+            $(this).toggleClass('active');
+            $('#overlay2').toggleClass('open');
+        });
+    </script>
 
 </body>
 
