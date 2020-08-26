@@ -26,16 +26,16 @@
     <script src="js/html5shiv.js"></script>
     <![endif]-->
     <!-- CSS読込 -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/pagetop.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/pagetop.css">
 	<!-- Base CSS -->
-	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="../css/base.css">
 
     <!-- フォントオーサム -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- ファビコン読込 -->
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="../img/favicon.ico" />
     <meta http-equiv="imagetoolbar" content="no">
     <!-- 検索有無設定 -->
     <meta name="robots" content="noindex,nofollow" />
@@ -43,19 +43,31 @@
     <link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
     <!-- jquery読込 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/easy-rollover.js"></script>
+    <script src="../js/easy-rollover.js"></script>
     <script src="https://use.typekit.net/zzb5mon.js"></script>
-    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/modernizr-2.8.3.min.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/modal.js"></script>
-    <script type="text/javascript" src="js/base-color.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/modal.js"></script>
+    <script type="text/javascript" src="../js/base-color.js"></script>
     <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
 	<!-- バリデーション読込 -->
 	<link rel="stylesheet" href="js/jQuery-Validation-Engine-master/css/validationEngine.jquery.css" type="text/css"/>
 	<script src="js/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-ja.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jQuery-Validation-Engine-master/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Captcha Site Key -->
+	<script src="https://www.google.com/recaptcha/api.js?render=6LckTKoUAAAAAMySNpmRlIhVy3UB6E8DzHMWrX5M"></script>
+	<script>
+		grecaptcha.ready(function() {
+			grecaptcha.execute('6LckTKoUAAAAAMySNpmRlIhVy3UB6E8DzHMWrX5M', {action: 'homepage'})
+			.then(function(token) {
+				// verify token
+				console.log(token);
+			});
+		});
+	</script>
+
 	<script>
 	$(function(){
 		jQuery("#form form").validationEngine();
@@ -323,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
 
 	<div class="space_2"></div>
-	<form method="post" action="#form" enctype="multipart/form-data" novalidate>
+	<form method="post" action="../index.php" enctype="multipart/form-data" novalidate>
         <div class="entyr-form cont_wrapper_50">
 			<ul class="wrapper_100 txt_left" style="padding: 0 0 0 0;">
 				<li>
@@ -419,7 +431,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		});
 	});	
 </script>
-
 </body>
 
 </html>
