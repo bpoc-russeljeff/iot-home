@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="" />
+    <meta property="fb:app_id" content="">
+	<title>IoT Home</title>
+	
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJLQ9VQ');</script>
+    <!-- End Google Tag Manager -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- CSS読込 -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/pagetop.css">	
+	<!-- Base CSS -->
+	<link rel="stylesheet" href="css/base.css">
+
+    <!-- フォントオーサム -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- ファビコン読込 -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- 検索有無設定 -->
+    <meta name="robots" content="noindex,nofollow" />
+    <!-- googlefont -->
+    <link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+    <!-- jquery読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/easy-rollover.js"></script>
+    <script src="https://use.typekit.net/zzb5mon.js"></script>
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/base-color.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+    <!-- スムーススクロール -->
+    <script type="text/javascript">
+    $(function(){
+      $('a[href^="#"]').on('click', function(){
+          var speed = 1000;
+          var href= $(this).attr('href');
+          var target = $(href == '#' || href == '' ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+      });
+    });
+	</script>
+	
+	<style id='base_val' type='text/css'></style>
+
+	<style type='text/css'>
+        table {
+            margin: auto;
+        }
+
+        /*表示切替*/
+        html body .view_pc {
+            display: block !important;
+        }
+
+        html body table.view_pc {
+            display: table !important;
+        }
+
+        html body table.view_pc tr {
+            display: table !important;
+        }
+
+        html body table.view_pc th {
+            display: table !important;
+        }
+
+        html body table.view_pc td {
+            display: table !important;
+        }
+
+        html body .view_pctab {
+            display: block !important;
+        }
+
+        html body table.view_pctab {
+            display: table !important;
+        }
+
+        html body table.view_pctab tr {
+            display: table !important;
+        }
+
+        html body table.view_pctab th {
+            display: table !important;
+        }
+
+        html body table.view_pctab td {
+            display: table !important;
+        }
+
+        html body .view_tab {
+            display: none !important;
+        }
+
+        html body .view_sp {
+            display: none !important;
+        }
+
+        html body .view_tabsp {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: block !important;
+            }
+
+            html body table.view_pctab {
+                display: table !important;
+            }
+
+            html body table.view_pctab tr {
+                display: table !important;
+            }
+
+            html body table.view_pctab th {
+                display: table !important;
+            }
+
+            html body table.view_pctab td {
+                display: table !important;
+            }
+
+            html body .view_tab {
+                display: block !important;
+            }
+
+            html body table.view_tab {
+                display: table !important;
+            }
+
+            html body table.view_tab tr {
+                display: table !important;
+            }
+
+            html body table.view_tab th {
+                display: table !important;
+            }
+
+            html body table.view_tab td {
+                display: table !important;
+            }
+
+            html body .view_sp {
+                display: none !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        @media only screen and (max-width: 770px) {
+            html body .view_pc {
+                display: none !important;
+            }
+
+            html body .view_pctab {
+                display: none !important;
+            }
+
+            html body .view_tab {
+                display: none !important;
+            }
+
+            html body .view_sp {
+                display: block !important;
+            }
+
+            html body table.view_sp {
+                display: table !important;
+            }
+
+            html body table.view_sp tr {
+                display: table !important;
+            }
+
+            html body table.view_sp th {
+                display: table !important;
+            }
+
+            html body table.view_sp td {
+                display: table !important;
+            }
+
+            html body .view_tabsp {
+                display: block !important;
+            }
+
+            html body table.view_tabsp {
+                display: table !important;
+            }
+
+            html body table.view_tabsp tr {
+                display: table !important;
+            }
+
+            html body table.view_tabsp th {
+                display: table !important;
+            }
+
+            html body table.view_tabsp td {
+                display: table !important;
+            }
+        }
+
+        /* エラーメッセージ　赤文字設定 */
+        .error_msg {
+            color: #ff2e5a !important;
+        }
+    </style>
+  </head>
+
+<body>
+
+	<header class="view_pc">
+
+        <div class="common_wrapper">
+            <div class="nav_logo">
+                <a href="#">
+					<img src="img/logo.png" alt="">
+				</a>
+            </div>            
+        </div>
+
+    </header>
+
+	<header class="view_sp shadow bg_white fixed_top">
+
+        <div class="wrapper_80 flex flex_center">
+            <div class="width_10 txt_center tspace_05 bspace_05">
+				<a href="#">
+					<img src="img/logo.png" alt="">
+				</a>
+            </div>
+            <div class="width_70"></div>
+            
+            <!-- Hamburger Menu -->
+            <div class="width_20 txt_center button_container bg_white block" id="toggle2" style="z-index:152;">
+                <span class="top wrapper_40"></span>
+                <span class="middle wrapper_40"></span>
+                <span class="bottom wrapper_40"></span>
+                <!-- <div class="default">Menu</div>
+                <div class="close">Close</div> -->
+            </div>
+        </div>
+
+        <!-- Overlay Menu Open -->
+        <div class="overlay txt_tpad_5" id="overlay2" style="z-index:150;">
+            <nav class="overlay-menu">
+                <div class="wrapper_60 flex flex_center">
+                    <div class="width_33"><a class="width_100 font_75 white bold" href="#">menu1 <img class="fix_zoom" src="icons/cart.png"></a></div>
+                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu2 <img class="fix_zoom" src="icons/cart.png"></a></div>
+                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu3 <img class="fix_zoom" src="icons/cart.png"></a></div>
+                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu4 <img class="fix_zoom" src="icons/cart.png"></a></div>
+                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu5 <img class="fix_zoom" src="icons/cart.png"></a></div>
+                    <div class="width_33"><a class="width_100 font_75 bold" href="#">menu6 <img class="fix_zoom" src="icons/cart.png"></a></div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+	<script>	
+		$('#toggle2').click(function () {
+			$(this).toggleClass('active');
+			$('#overlay2').toggleClass('open');
+		});
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/*///////////////////////////////////////////media Queries///////////////////////////////////////////*/
+@media only screen and (min-width: 320px) {
+  /*///////////////////////////////////////////main///////////////////////////////////////////*/
+  h3.about_title .abt_title_img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -50px;
+    width: 15%;
+    height: auto;
+  }
+  div.common_wrapper2.sp .footer_contact_wrapper_sp.sp a .btn_contact {
+    width: 70%;
+    vertical-align: bottom;
+    position: absolute;
+    top: 24%;
+    left: 2%;
+  }
+  div.common_wrapper2.sp .footer_contact_wrapper_sp.sp a .btn_tel {
+    width: 70%;
+    vertical-align: bottom;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+  }
+  .pc {
+    display: none !important;
+  }
+}
+
+/*///////////////////////////////////////////media Queries///////////////////////////////////////////*/
+@media only screen and (min-width: 479px) {
+  /*///////////////////////////////////////////main///////////////////////////////////////////*/
+  h3.about_title .abt_title_img {
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    width: 20%;
+    left: -80px;
+    top: -25px;
+  }
+  .width_70 {
+    width: 70% !important;
+  }
+  .width_30 {
+    width: 30% !important;
+  }
+  .pc {
+    display: block !important;
+  }
+  /*///////////////////////////////////////////  Privacy Page  ///////////////////////////////////////////*/
+  h2.view_tabsp {
+    margin-top: 19vw;
+  }
+}
+
+/*///////////////////////////////////////////media Queries///////////////////////////////////////////*/
+@media only screen and (min-width: 1000px) {
+  /*///////////////////////////////////////////main///////////////////////////////////////////*/
+  h3.about_title .abt_title_img {
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    left: -80px;
+    top: -25px;
+    width: 120px;
+  }
+  .width_70 {
+    width: 70% !important;
+  }
+  .width_30 {
+    width: 30% !important;
+  }
+  .pc {
+    display: block !important;
+  }
+}
