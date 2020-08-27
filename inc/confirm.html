@@ -26,9 +26,10 @@
   <script src="js/html5shiv.js"></script>
   <![endif]-->
   <!-- CSS読込 -->
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/pagetop.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pagetop.css">
+  <link rel="stylesheet" href="css/main.css">
   <!-- Base CSS -->
 	<link rel="stylesheet" href="css/base.css">
 
@@ -268,98 +269,98 @@
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJLQ9VQ"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <header class="fixed_top" style="background-color:rgba(255,255,255,0.75);">
-  
-  </header>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJLQ9VQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="fixed_top" style="background-color:rgba(255,255,255,0.75);">
 
-  <main>
+</header>
 
-  <div class="space_5"><!-- スペース --></div>
+<main>
 
-  <section class="wrapper_100">
-
-
-  <div class="cont_wrapper_75 txt_center">
-  <div class="space_5"><!-- スペース --></div>
-
-
-  <div class="space_3"><!-- スペース --></div>
-  <div class="view_tabsp space_2"><!-- スペース --></div>
-
-    <form method="post" action="#form" enctype="multipart/form-data" novalidate  autocomplete="off">
-          <div class="entyr-form cont_wrapper_75">
-              <ul class="wrapper_100 txt_left">
-                  <li class="width_100">
-                      <label for="input-request" class="font_100 navy bold">&nbsp;お問い合わせ種別&nbsp;</label>
-                      <p class="font_150">
-                          <?php if( $clean['inquiry'] === "1" ){ echo 'ご入居に関するお問い合わせ'; }
-                          elseif( $clean['inquiry'] === "2" ){ echo '設備に関するお問い合わせ'; }
-                          else{ echo ''; } ?>
-                      </p>
-                      <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
-                  </li>
-                  <li class="width_100">
-                      <label for="input-name" class="font_100 navy bold">&nbsp;お名前&nbsp;</label>
-                      <p class="font_150"><?php echo $clean['your_name']; ?></p>
-                      <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
-                  </li>
-                  <li class="width_100">
-                      <label for="input-company" class="font_100 navy bold">&nbsp;会社名&nbsp;</label>
-                      <p class="font_150"><?php echo $clean['company_name']; ?></p>
-                      <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
-                  </li>
-                  <li class="width_100">
-                      <label for="input-email" class="font_100 navy bold">&nbsp;E-Mail&nbsp;</label>
-                      <p class="font_150"><?php echo $clean['email']; ?></p>
-                      <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
-                  </li>
-                  <li class="width_100">
-                      <label for="input-tel" class="font_100 navy bold">&nbsp;電話番号&nbsp;</label>
-                      <p class="font_150"><?php echo $clean['tel']; ?></p>
-                      <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
-                  </li>
-                  <li class="widht_100">
-                      <label for="input-text" class="font_100 navy bold">&nbsp;お問い合わせ内容&nbsp;</label>
-                      <p class="font_150"><?php echo nl2br($clean['contact']); ?></p>
-                      <hr class="view_tabsp w_grey hr_1 tspace_5 bspace_5">
-                  </li>
-              </ul>
-          </div>
-
-  <div class="space_5"><!-- スペース --></div>
-
-    <div class="view_pc wrapper_80 flex_2 enty-send-btn">
-      <input class="view_pc col2_sp f_left  square_btn white bg_w_grey box_radius_10 line_h_200 font_200 bold arial" type="submit" name="btn_back" value="戻　る">
-      <input class="view_pc col2_sp f_right  square_btn white bg_red box_radius_10 line_h_200 font_200 bold arial" type="submit" name="btn_submit" value="送　信">
+    <div class="wrapper_35 view_pc">
+		<img class="fix_zoom undrag" src="img/pc_step_2.png" alt="">
     </div>
-    <div class="view_tabsp wrapper_100 flex_2 enty-send-btn">
-      <input class="view_tabsp col2_sp f_left square_btn white bg_w_grey box_radius_10 line_h_300 font_100 bold arial" type="submit" name="btn_back" value="戻　る">
-      <input class="view_tabsp col2_sp f_right square_btn white bg_red box_radius_10 line_h_300 font_100 bold arial" type="submit" name="btn_submit" value="送　信">
-    </div>
+    <div class="wrapper_60 view_tab">
+		<img class="fix_zoom undrag" src="img/pc_step_2.png" alt="">
+	</div>
+	<div class="wrapper_95 view_sp">
+		<img class="fix_zoom undrag" src="img/sp_step_2.png" alt="">
+	</div>
+    <div class="space_2"></div>
+    <section class="wrapper_100">
+        <div class="cont_wrapper_60 txt_center">
+            <form method="post" action="#form" enctype="multipart/form-data" novalidate  autocomplete="off">
+                <div class="entyr-form cont_wrapper_75">
+                    <ul class="wrapper_100 txt_left">
+                        <li class="width_100">
+                            <label for="input-request" class="font_100 navy bold">お問い合わせ種別</label>
+                            <p class="font_100 sp_padding_left">
+                                <?php if( $clean['inquiry'] === "1" ){ echo 'ご入居に関するお問い合わせ'; }
+                                elseif( $clean['inquiry'] === "2" ){ echo '設備に関するお問い合わせ'; }
+                                else{ echo ''; } ?>
+                            </p>
+                        </li>
+                        <div class="space_2"></div>
+                        <li class="width_100">
+                            <label for="input-name" class="font_100 navy bold">お名前</label>
+                            <p class="font_100 sp_padding_left"><?php echo $clean['your_name']; ?></p>
+                        </li>
+                        <div class="space_2"></div>
+                        <li class="width_100">
+                            <label for="input-company" class="font_100 navy bold">会社名</label>
+                            <p class="font_100 sp_padding_left"><?php echo $clean['company_name']; ?></p>
+                        </li>
+                        <div class="space_2"></div>
+                        <li class="width_100">
+                            <label for="input-email" class="font_100 navy bold">メールアドレス</label>
+                            <p class="font_100 sp_padding_left"><?php echo $clean['email']; ?></p>
+                        </li>
+                        <div class="space_2"></div>
+                        <li class="width_100">
+                            <label for="input-tel" class="font_100 navy bold">ご連絡先</label>
+                            <p class="font_100 sp_padding_left"><?php echo $clean['tel']; ?></p>
+                        </li>
+                        <div class="space_2"></div>
+                        <li class="widht_100">
+                            <label for="input-text" class="font_100 navy bold">お問い合わせ詳細</label>
+                            <p class="font_100 sp_padding_left"><?php echo nl2br($clean['contact']); ?></p>
+                        </li>
+                    </ul>
+                    <hr class=" w_grey hr_1 tspace_2 bspace_2">
+                    <p class="view_pctab font_75">内容をご確認の上、よろしければ下記の「送信する」ボタンを押してください。</p>
+                    <p class="view_sp font_75">内容をご確認の上、よろしければ下記の「送信する」ボタン<br>を押してください。</p>
+                </div>
 
-    <input type="hidden" name="inquiry" value="<?php echo $clean['inquiry']; ?>">
-    <input type="hidden" name="your_name" value="<?php echo $clean['your_name']; ?>">
-    <input type="hidden" name="company_name" value="<?php echo $clean['company_name']; ?>">
-    <input type="hidden" name="email" value="<?php echo $clean['email']; ?>">
-    <input type="hidden" name="tel" value="<?php echo $clean['tel']; ?>">
-    <input type="hidden" name="contact" value="<?php echo $clean['contact']; ?>">
-    <input type="hidden" name="agreement" value="<?php echo $clean['agreement']; ?>">
-    
-    </form>
-    </div>
-    <div class="space_5"><!-- スペース --></div>
-    <div class="space_3"><!-- スペース --></div>
-  </section>
+                <div class="space_2"><!-- スペース --></div>
 
-  </main>
+                <div class="view_pc cont_wrapper_75 flex_2 enty-send-btn">
+                <input class="view_pc f_left width_30 square_btn white bg_grey  line_h_400 font_100 bold arial" type="submit" name="btn_back" value="戻　る">
+                <input class="view_pc f_right width_65 square_btn white bg_red  line_h_400 font_100 bold arial" type="submit" name="btn_submit" value="送　信">
+                </div>
+                <div class="view_tabsp cont_wrapper_75 flex_2 enty-send-btn">
+                <input class="view_tabsp f_left width_30 square_btn white bg_w_grey  line_h_250 font_100 bold arial" type="submit" name="btn_back" value="戻　る">
+                <input class="view_tabsp f_right width_65 square_btn white bg_red  line_h_250 font_100 bold arial" type="submit" name="btn_submit" value="送　信">
+                </div>
 
-  <footer class="wrapper_100 bg_black txt_center">
-    
-  </footer>
+                <input type="hidden" name="inquiry" value="<?php echo $clean['inquiry']; ?>">
+                <input type="hidden" name="your_name" value="<?php echo $clean['your_name']; ?>">
+                <input type="hidden" name="company_name" value="<?php echo $clean['company_name']; ?>">
+                <input type="hidden" name="email" value="<?php echo $clean['email']; ?>">
+                <input type="hidden" name="tel" value="<?php echo $clean['tel']; ?>">
+                <input type="hidden" name="contact" value="<?php echo $clean['contact']; ?>">
+                <input type="hidden" name="agreement" value="<?php echo $clean['agreement']; ?>">
+            
+            </form>
+        </div>
+    </section>
+    <div class="space_5"></div>
+</main>
+
+<footer class="wrapper_100 bg_black txt_center">
+
+</footer>
 </body>
 
 </html>
