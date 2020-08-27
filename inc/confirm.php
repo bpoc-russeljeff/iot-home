@@ -447,12 +447,12 @@
 
         <div class="wrapper_35 view_pc">
             <div class="space_2"></div>
-            <img class="fix_zoom undrag" src="img/pc_step_2.png" alt="">
+            <img class="fix_zoom undrag" src="../img/pc_step_2.png" alt="">
         </div>
         <div class="wrapper_95 view_tabsp">
             <div class="space_5"></div>
             <div class="space_2"></div>
-            <img class="fix_zoom undrag" src="img/sp_step_2.png" alt="">
+            <img class="fix_zoom undrag" src="../img/sp_step_2.png" alt="">
         </div>
         <div class="space_2"></div>
         <section class="wrapper_100">
