@@ -55,8 +55,9 @@
     <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
 
     <script type="text/javascript" src="../js/jquery.easeScroll.js"></script>
+
 	<!-- スムーススクロール -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 	$(function(){
 		$('a[href^="#"]').on('click', function(){
 			var speed = 1000;
@@ -67,7 +68,8 @@
 			return false;
 		});
 	});
-	</script>
+    </script> -->
+    
 	<style id='base_val' type='text/css'></style>
 
 	<style>
@@ -547,8 +549,6 @@
 			$('#overlay').toggleClass('open');
 		});
 	</script>
-
-</footer>
 </body>
 
 </html>

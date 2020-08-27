@@ -67,20 +67,20 @@
 	<!-- スムーススクロール -->
 	<script type="text/javascript">
 	$(function(){
-	$('a[href^="#"]').on('click', function(){
-		var speed = 1000;
-		var href= $(this).attr('href');
-		var target = $(href == '#' || href == '' ? 'html' : href);
-		var position = target.offset().top;
-		$('body,html').animate({scrollTop:position}, speed, 'swing');
-		return false;
-	});
+		$('a[href^="#"]').on('click', function(){
+			var speed = 1000;
+			var href= $(this).attr('href');
+			var target = $(href == '#' || href == '' ? 'html' : href);
+			var position = target.offset().top;
+			$('body,html').animate({scrollTop:position}, speed, 'swing');
+			return false;
+		});
 	});
 	</script>
 	<!-- 背景変換 -->
 
 	<!-- へッダー消し -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		$(window).scroll(function() {
 			top_menu = $('header');
 				if(($(document).height() - ($(window).height() + $(window).scrollTop()))/$(document).height() < 0.22){
@@ -89,7 +89,7 @@
 				top_menu.fadeIn();
 			}
 		});
-	</script>
+	</script> -->
 
 	<style id='base_val' type='text/css'></style>
 
@@ -618,19 +618,8 @@
                 <p class="tb_mg0 white font_65 txt_tpad_05 txt_bpad_05 hiraginokaku">Copyright (C) 2020 FG-Lab all rights reserved.</p>
             </div>
         </div>
-    </footer>
-
-    <script>
-        $("html").easeScroll();
-    </script> 
-
-	<script>	
-		$('#toggle').click(function () {
-			$(this).toggleClass('active');
-			$('#overlay').toggleClass('open');
-		});
-	</script>
-
+	</footer>
+	
 	<script>
 		$(document).ready(function(){
 			$('#agreement').click(function () {
@@ -644,6 +633,17 @@
 				}
 			});
 		});	
+	</script>	
+
+    <script>
+        $("html").easeScroll();
+    </script> 
+
+	<script>	
+		$('#toggle').click(function () {
+			$(this).toggleClass('active');
+			$('#overlay').toggleClass('open');
+		});
 	</script>
 
 </body>
