@@ -57,18 +57,18 @@
     <script type="text/javascript" src="../js/jquery.easeScroll.js"></script>
 
 	<!-- スムーススクロール -->
-	<!-- <script type="text/javascript">
-	$(function(){
-		$('a[href^="#"]').on('click', function(){
-			var speed = 1000;
-			var href= $(this).attr('href');
-			var target = $(href == '#' || href == '' ? 'html' : href);
-			var position = target.offset().top;
-			$('body,html').animate({scrollTop:position}, speed, 'swing');
-			return false;
-		});
-	});
-    </script> -->
+	<script type="text/javascript">
+        $(function(){
+            $('a[href^="#"]').on('click', function(){
+                var speed = 1000;
+                var href= $(this).attr('href');
+                var target = $(href == '#' || href == '' ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
     
 	<style id='base_val' type='text/css'></style>
 
