@@ -428,51 +428,51 @@
             <div class="width_100 flex flex_center">
                 <div class="width_37">
                     <a href="#">
-                        <img class="fix_zoom" src="../img/logo.png" >
+                        <img class="fix_zoom" src="../img/logo.png" alt="IoT-Home Logo">
                     </a>
                 </div>
                 <div class="width_5"></div>
                 <div class="width_38 flex flex_center">
                     <div class="width_33">
-                        <a href="#concept_id" class="font_75 txt_color_1 yugothic">コンセプト</a>
+                        <!-- <a href="#concept_id" class="font_75 txt_color_1 yugothic">コンセプト</a> -->
                     </div>
                     <div class="width_33">
-                        <a href="#access_id" class="font_75 txt_color_1 yugothic">アクセスマップ</a>
+                        <!-- <a href="#access_id" class="font_75 txt_color_1 yugothic">アクセスマップ</a> -->
                     </div>
                     <div class="width_33">
-                        <a href="#prop_id" class="font_75 txt_color_1 yugothic">物件概要</a>
+                        <!-- <a href="#prop_id" class="font_75 txt_color_1 yugothic">物件概要</a> -->
                     </div>
                 </div>                
                 <div class="width_20">
-                    <a href="inc/form.php" class="square_btn bg_maroon line_h_300 font_75 yugothic white">お問い合わせ</a>
+                    <!-- <a href="inc/form.php" class="square_btn bg_maroon line_h_300 font_75 yugothic white">お問い合わせ</a> -->
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Mobile Navigation -->
-	<header class="view_tabsp shadow bg_white fixed_top">
+	<header class="view_tabsp u_line_t_black bg_white fixed_top">
 
         <div class="wrapper_95 flex flex_center">
             <div class="width_60 txt_center tspace_1 bspace_1">
 				<a href="#">
-					<img src="../img/logo.png" alt="">
+					<img src="../img/logo.png" alt="IoT-Home Logo">
 				</a>
             </div>
             <div class="width_30"></div>
             
             <!-- Hamburger Menu -->
             <div class="width_10 txt_center button_container block" id="toggle" style="z-index:152;">
-                <span class="top wrapper_50"></span>
+                <!-- <span class="top wrapper_50"></span>
                 <span class="middle wrapper_50"></span>
-                <span class="bottom wrapper_50"></span>
+                <span class="bottom wrapper_50"></span> -->
                 <!-- <div class="default">Menu</div>
                 <div class="close">Close</div> -->
             </div>
         </div>
 
         <!-- Overlay Menu Open -->
-        <div class="overlay" id="overlay" style="z-index:150;">
+        <!-- <div class="overlay" id="overlay" style="z-index:150;">
             <nav class="overlay-menu">
                 <ul class="width_100 flex flex_center">
                     <li class="width_100 b_btm"><a class="width_100 font_150 txt_tpad_1 txt_bpad_1 white block hiraginokaku" href="#concept_id">コンセプト</a></li>
@@ -483,20 +483,43 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
 
     </header>
 
 	<main>
 
-		<div class="wrapper_35 view_pc">
-			<div class="space_2"></div>
-			<img class="fix_zoom undrag" src="../img/pc_step_1.png" alt="">
-		</div>
-		<div class="wrapper_95 view_tabsp">
-			<div class="space_5"></div>
-			<div class="space_2"></div>
-			<img class="fix_zoom undrag" src="../img/sp_step_1.png" alt="">
+		<div class="step_section">
+			<div class="view_pc">
+				<div class="wrapper_45">
+					<div class="space_2"></div>
+					<img src="../img/form_title_pc.png" alt="お問い合わせフォーム">
+					<div class="space_05"></div>
+					<p class="tb_mg0 txt_color_1 font_75 hiraginokaku txt_center font_weight_500 line_h_200" style="letter-spacing: 0.15vw;">必要事項をご記入の上、「ご確認する」ボタンを押してください。<br/>
+					<span style="color: #b33e3e !important;">※</span>印は必須入力項目です。</p>
+					<div class="space_1"></div>
+
+					<div class="wrapper_75">
+						<img class="fix_zoom undrag" src="../img/form_step_pc.png" alt="01 内容入力 | 02 内容確認 | 03 完了">
+					</div>
+				</div>
+			</div>
+
+			<div class="view_tabsp">				
+				<div class="wrapper_95">
+					<div class="space_5"></div>
+					<div class="space_2"></div>
+					<img src="../img/form_title_pc.png" alt="お問い合わせフォーム">
+					<div class="space_05"></div>
+					<p class="tb_mg0 txt_color_1 font_100 yugothic txt_center font_weight_500 line_h_125">必要事項をご記入の上、「ご確認する」ボタンを押してください。<br/>
+					<span style="color: #b33e3e !important;">※</span>印は必須入力項目です。</p>
+					<div class="space_1"></div>
+
+					<div class="wrapper_70">
+						<img class="fix_zoom undrag" src="../img/form_step_pc.png" alt="01 内容入力 | 02 内容確認 | 03 完了">
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="space_3"></div>
@@ -579,10 +602,10 @@
 				</div>
 				<div class="space_1"></div>
 				<div class="cont_wrapper_50 bg_white view_sp">
-					<img class="fix_zoom undrag" src="../img/sp_privacy.png" alt="">
+					<img class="fix_zoom undrag" src="../img/sp_privacy.png" alt="Terms & Condition">
 				</div>
 				<div class="cont_wrapper_75 bg_white view_pctab">
-					<img class="fix_zoom undrag" src="../img/pc_privacy.png" alt="">
+					<img class="fix_zoom undrag" src="../img/pc_privacy.png" alt="Terms & Condition">
 				</div>
 				<div class="space_1"></div>
 				<div class="txt_center cont_wrapper_50 flex flex_center agreement txt_bpad_05 txt_tpad_05" style="position:relative;">
